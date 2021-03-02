@@ -1,6 +1,6 @@
-Pillow==5.0.0
 django==3.1.5
-django-ckeditor
+matplotlib
 numpy
 pandas
-matplotlib
+pillow
+scipy
