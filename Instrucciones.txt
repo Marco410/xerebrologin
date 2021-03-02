@@ -1,0 +1,23 @@
+﻿Copia esta app profiles en tu proyecto webplayground:
+
+· En Windows ->	C:\CursoDjango\webplayground
+· En Mac OS -> /Users/tu_usuario/Documents/CursoDjango/webplayground
+· En Linux -> /home/tu_usuario/CursoDjango/webplayground
+
+Para utilizarla debes hacer lo siguiente:
+
+· Añade la app profiles en la lista INSTALLED_APPS de settings.py
+
+· Configura las urls globales:
+
+    from profiles.urls import profiles_patterns
+
+    # Paths de profiles
+    path('profiles/', include(profiles_patterns)),
+
+· Añade la sección al menú superior en base.html:
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'profiles:list' %}">Perfiles</a>
+    </li>
+
